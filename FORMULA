@@ -1,0 +1,8 @@
+name: spm-multi-formula 
+os: RedHat, CentOS
+os_family: RedHat
+version: 201702
+release: 1
+summary: Tests the ability of spm to use multiple repositories with the same package names.
+description: Tests the ability of spm to use multiple repositories with the same package names.
+top_level_dir: spm-multi-formula
