@@ -40,10 +40,12 @@ mkdir /srv/spm_local_repo
 
 #build this package
 sudo spm build $SRCDIR
+sudo spm build $SRCDIR/dependent-formula
+sudo spm build $SRCDIR/super-dependent-formula
 
 #copy the package to each repo
 cp /srv/spm_build/*.spm /srv/spm_remote_repo
-cp /srv/spm_build/*.spm /srv/spm_local_repo
+cp /srv/spm_build/spm-multi-repo*.spm /srv/spm_local_repo
 
 #create each repo's metadata
 sudo spm create_repo /srv/spm_remote_repo
