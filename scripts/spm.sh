@@ -51,4 +51,4 @@ sudo spm create_repo /srv/spm_local_repo
 
 #try installing this package
 sudo spm update_repo
-sudo spm install spm-multi-repo
+sudo spm install -y spm-multi-repo
